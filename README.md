@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ejercicio 1: Lista de Asteroides Próximos a la Tierra
 
-## Getting Started
+## Objetivo
+Obtener y mostrar una lista de asteroides próximos a la Tierra de esta semana.
 
-First, run the development server:
+## Instrucciones
+1. Buscar dentro de la API de la NASA el endpoint que proporcione datos de asteroides próximos a la Tierra entre 2 fechas.
+2. Crear un componente que obtenga los datos y los muestre en una lista.
+3. Implementar `Suspense` para manejar la carga de datos.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Ejercicio 2: Galería de Imágenes del Día
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Objetivo
+Mostrar una galería de imágenes del día de la NASA de esta semana.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Instrucciones
+1. Utilizar la API de imágenes del día de la NASA.
+2. Crear un componente que muestre las imágenes en una cuadrícula.
+3. Manejar la carga de más imágenes al hacer *scroll*.
