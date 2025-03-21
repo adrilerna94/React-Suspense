@@ -11,7 +11,7 @@ export default function AsteroidsPage() {
     const [resource, setResource] = useState(null);
     const start_date = "2015-09-07";
     const end_date = "2015-09-08";
-    const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${start_date}&end_date=${end_date}&api_key=vTobgSJvWSmIHziifqKgqSG0aYxg7RoscZEDDY20`;
+    const url = `https://ap.nasa.gov/neo/rest/v1/feed?start_date=${start_date}&end_date=${end_date}&api_key=vTobgSJvWSmIHziifqKgqSG0aYxg7RoscZEDDY20`;
 
     async function fetchAsteroids() {
         const newResource = createResource(async () => {
@@ -20,7 +20,7 @@ export default function AsteroidsPage() {
                 throw new Error('Failed to fetch asteroids');
             }
             const data = (await response.json()).near_earth_objects[end_date]; // accedemos a la propiedad end_date
-            await new Promise((resolve) => setTimeout(resolve, 3000));
+            await new Promise((resolve) => setTimeout(resolve, 1500));
             return data;
         });
         setResource(newResource);
